@@ -1,0 +1,8 @@
+# Forzar detección de lenguajes principales
+*.html linguist-language=HTML
+*.css linguist-language=CSS
+*.js linguist-language=JavaScript
+
+# Ignorar archivos que no deben contar en estadísticas
+*.min.js linguist-vendored
+*.map linguist-vendored
