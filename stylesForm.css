@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9fafb;
+    padding: 20px;
+}
+
+.form-section {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #111827;
+
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: 500;
+    color: #374151;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    min-width: 250px;
+    padding: 12px 16px;
+    border-radius: 8px;
+
+    background-color: #16a34a;
+    /* verde por defecto */
+    color: #fff;
+    /* texto blanco visible */
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+    visibility: hidden;
+    /* oculto por defecto */
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+#task-registration-form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+#equipment-type {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    width: 130px;
+}
+
+
+
+#priority {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    width: 100px;
+}
+
+.submit-btn {
+    background-color: #16a34a;
+    color: white;
+    border: 2px solid #16a34a;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+
+}
+
+.submit-btn:hover {
+    background-color: #15803d;
+}
+
+.submit-btn:focus {
+    outline: 2px solid #2563eb;
+}
