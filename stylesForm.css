@@ -4,7 +4,7 @@ body {
     padding: 5px;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,13 +12,14 @@ body {
 
 }
 
-.navegador{
+.navegador {
     display: flex;
     justify-content: space-between;
     height: auto;
 
 }
-.nav-btn{
+
+.nav-btn {
     border: none;
     margin-left: 10px;
     color: #f9fafb;
@@ -30,11 +31,11 @@ body {
     cursor: pointer;
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
     background-color: #2563eb;
 }
 
-h2{
+h2 {
     font-size: 30px;
     text-align: center;
     margin: 1px;
@@ -50,11 +51,12 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
-#list-view{
+#list-view {
     display: none;
+   
 }
 
 fieldset {
@@ -79,25 +81,25 @@ legend {
     gap: 6px;
 }
 
-.input-group-type{
+.input-group-type {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
 }
 
-#equipment-type{
+#equipment-type {
     cursor: pointer;
 }
 
 
-.input-group-priority{
+.input-group-priority {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-#priority{
+#priority {
     cursor: pointer;
 }
 
@@ -196,4 +198,93 @@ textarea:focus {
 
 .submit-btn:focus {
     outline: 2px solid #2563eb;
+}
+
+/* Cards Tarjetas */
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.task-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.task-header {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.task-body {
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    text-align: center;
+    width: auto;
+    gap: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+.badge-select.pendiente {
+    background-color: #f4b400;
+}
+.badge-select.en-proceso {
+    background-color: #4285f4;
+}
+
+.badge-select.completada {
+    background-color: #0f9d58;
+}
+
+.badge-select.cancelada {
+    background-color: #db4437;
+}
+
+option.pendiente {
+  background-color: #f4b400; /* amarillo */
+}
+option.en-proceso {
+  background-color: #4285f4; /* azul */
+}
+option.completada {
+  background-color: #0f9d58; /* verde */
+}
+option.cancelada {
+  background-color: #db4437; /* rojo */
+}
+
+
+.badge.alta {
+    background-color: #d93025;
+}
+
+.badge.media {
+    background-color: #fbbc05;
+}
+
+.badge.baja {
+    background-color: #34a853;
+}
+
+.empty-message {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    margin-top: 2rem;
+    display: none;
+}
+select{
+    margin-bottom: 10px;
 }

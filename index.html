@@ -17,15 +17,14 @@
     <!-- Navegador -->
     <nav class="navegador">
       <h2 id="title-text"></h2>
-      
-      <button id="toggle-view-btn" class="nav-btn" >Ver Lista Equipos</button>
+
+      <button id="toggle-view-btn" class="nav-btn">Ver Lista Equipos</button>
     </nav>
 
     <!-- Alerta visual al guardar o enviar el formulario -->
     <div id="toast"></div>
-    <!-- Seccion para Vista Formulario -->
+    <!-- Seccion Vista Formulario -->
     <section id="registration-view" class="view-section">
-
       <form action="" id="task-registration-form">
         <!-- Datos Cliente -->
         <fieldset class="cliente-data-group">
@@ -76,11 +75,6 @@
             <input type="text" id="equipment-modelo" name="equipment-modelo" required />
           </div>
 
-          <!-- <div class="input-group">
-              <label for="equipment-anio">Año</label>
-              <input type="number" id="equipment-anio" name="equipment-anio" />
-            </div> -->
-
           <div class="input-group">
             <label for="equipment-serie">Número de Serie</label>
             <input type="text" id="equipment-serie" name="equipment-serie" required />
@@ -107,10 +101,23 @@
       </form>
     </section>
 
-    <!-- Seccion para Vista Lista Equipos -->
+    <!-- Seccion Vista Lista Equipos -->
     <section id="list-view" class="view-section">
+      <!-- h2 title Equipos Registrados -->
       <h2></h2>
-      <div>tabla</div>
+      <!-- Muestra Contenido de la tabla -->
+      <div id="task-container" class="task-grid"></div>
+      <div id="emptyMessage" class="empty-message">No hay tareas registradas aún.</div>
+
+      <template id="template">
+        <select class="badge-select" >
+          <option  value="pendiente" class="pendiente">Pendiente</option>
+          <option value="en-proceso" class="en-proceso">En proceso</option>
+          <option value="completada" class="completada">Terminada</option>
+          <option value="cancelada" class="cancelada">Cancelada</option>
+        </select>
+      </template>
+
     </section>
 
   </main>
